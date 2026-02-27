@@ -64,12 +64,27 @@ This project demonstrates practical database administration and design skills, i
 
 ## 🧠 Key Design Decisions
 
+## 🧠 Key Design Decisions
+
 - The schema was normalized to Third Normal Form (3NF) to eliminate redundancy and maintain data integrity.
 - Foreign key constraints were enforced to ensure referential integrity between customers, accounts, and transactions.
+- Customer information was separated from account data to prevent redundancy and update anomalies, ensuring that customer
+  details are stored once and referenced through foreign keys.
 - Indexes were added to frequently queried columns such as foreign keys and transaction dates to improve performance.
-- Stored procedures were used to encapsulate transaction logic and maintain ACID compliance.
+- Stored procedures were used to encapsulate transaction logic and maintain ACID-compliant transaction handling.
 - An audit_logs table was implemented to track data modifications and simulate enterprise-level monitoring.
 - Fraud detection logic was added to flag suspicious transaction patterns.
+---
+
+## 📂 Project Structure
+
+01_create_database.sql – Creates the banking database.
+02_create_tables.sql – Defines all core tables including customers, accounts, transactions, payments, and audit logs.
+03_indexes.sql – Adds indexes to optimize query performance on frequently accessed columns.
+04_sample_data.sql – Inserts sample records to simulate real banking activity.
+05_stored_procedures.sql – Contains stored procedures for transaction handling and business logic.
+06_views.sql – Creates reporting views for monthly summaries and operational insights.
+07_fraud_system.sql – Implements basic fraud detection logic to flag suspicious transaction patterns.
 
 ---
 
@@ -84,3 +99,4 @@ This project demonstrates practical database administration and design skills, i
 7. Run `07_fraud_system.sql`
 
 The scripts are structured in execution order to simulate a production-style deployment workflow.
+
