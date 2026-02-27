@@ -64,8 +64,6 @@ This project demonstrates practical database administration and design skills, i
 
 ## 🧠 Key Design Decisions
 
-## 🧠 Key Design Decisions
-
 - The schema was normalized to Third Normal Form (3NF) to eliminate redundancy and maintain data integrity.
 - Foreign key constraints were enforced to ensure referential integrity between customers, accounts, and transactions.
 - Customer information was separated from account data to prevent redundancy and update anomalies, ensuring that customer
@@ -99,4 +97,5 @@ This project demonstrates practical database administration and design skills, i
 7. Run `07_fraud_system.sql`
 
 The scripts are structured in execution order to simulate a production-style deployment workflow.
+
 
