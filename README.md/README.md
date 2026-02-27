@@ -62,6 +62,17 @@ This project demonstrates practical database administration and design skills, i
 
 ---
 
+## 🧠 Key Design Decisions
+
+- The schema was normalized to Third Normal Form (3NF) to eliminate redundancy and maintain data integrity.
+- Foreign key constraints were enforced to ensure referential integrity between customers, accounts, and transactions.
+- Indexes were added to frequently queried columns such as foreign keys and transaction dates to improve performance.
+- Stored procedures were used to encapsulate transaction logic and maintain ACID compliance.
+- An audit_logs table was implemented to track data modifications and simulate enterprise-level monitoring.
+- Fraud detection logic was added to flag suspicious transaction patterns.
+
+---
+
 ## ▶ How to Run This Project
 
 1. Run `01_create_database.sql`
@@ -73,4 +84,3 @@ This project demonstrates practical database administration and design skills, i
 7. Run `07_fraud_system.sql`
 
 The scripts are structured in execution order to simulate a production-style deployment workflow.
-
