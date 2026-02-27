@@ -59,3 +59,18 @@ The schema is designed in Third Normal Form (3NF) to eliminate redundancy and ma
 ## 📈 Purpose of the Project
 
 This project demonstrates practical database administration and design skills, including performance optimization, security tracking, and structured relational modeling suitable for enterprise environments.
+
+---
+
+## ▶ How to Run This Project
+
+1. Run `01_create_database.sql`
+2. Run `02_create_tables.sql`
+3. Run `03_indexes.sql`
+4. Run `04_sample_data.sql`
+5. Run `05_stored_procedures.sql`
+6. Run `06_views.sql`
+7. Run `07_fraud_system.sql`
+
+The scripts are structured in execution order to simulate a production-style deployment workflow.
+
