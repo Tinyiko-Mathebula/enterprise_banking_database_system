@@ -98,4 +98,10 @@ This project demonstrates practical database administration and design skills, i
 
 The scripts are structured in execution order to simulate a production-style deployment workflow.
 
+---
 
+## Author
+
+Tinyiko Patience Mathebula  
+Junior SQL / MySQL Database Administrator  
+GitHub: https://github.com/Tinyiko-Mathebula
